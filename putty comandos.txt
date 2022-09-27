@@ -1,0 +1,29 @@
+import java.io.IOException;
+
+public class P2
+{
+    public static void main(String[] args) throws IOException
+    {
+        ProcessBuilder pb = new ProcessBuilder(args);
+        pb.start();
+    }
+}
+
+
+sudo apt install openjdk-17-jdk-headless
+
+#include <stdio.h>
+#include <unistd.h>
+
+void main()
+{
+        int id;
+        int padreid;
+
+        id = getpid();
+        padreid = getppid();
+
+        printf("%d\n",id);
+        printf("%d\n",padreid);
+}
+
