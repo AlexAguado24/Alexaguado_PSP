@@ -8,7 +8,7 @@ public class Hijo {
         String enviar;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         enviar = new String();
-        enviar=br.readLine();
+        enviar =br.readLine();
         System.out.println("Soy el hijo "+enviar);
     }
 }
