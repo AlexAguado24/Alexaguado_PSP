@@ -60,7 +60,7 @@ public class Hijo {
                     cantidad++;
                 }
             }
-            System.out.println("Tengo "+ cantidad);
+            System.out.println("Tengo "+ cantidad +" zapatillas de esa marca");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
