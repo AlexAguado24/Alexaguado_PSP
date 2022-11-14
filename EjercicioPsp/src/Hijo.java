@@ -3,12 +3,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Hijo {
 
     public static class Zapatilla implements Serializable{
 
         String marca;
+
+        public Zapatilla() {}
 
         public Zapatilla(String marca) {
             this.marca = marca;
@@ -26,6 +29,8 @@ public class Hijo {
     public static void main(String[] args){
 
         ArrayList<Zapatilla> zapatillas = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+
 
         Zapatilla zapatilla = new Zapatilla("nike");
         Zapatilla zapatilla2 = new Zapatilla("adidas");
@@ -63,6 +68,32 @@ public class Hijo {
             System.out.println("Tengo "+ cantidad +" zapatillas de esa marca");
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+        System.out.println("¿Cuantas zapatillas quieres vender?");
+        int total = sc.nextInt();
+        if (total <= cantidad) {
+            VenderZapatillas vz = new VenderZapatillas(total);
+            for (int i = 0; i < zapatillas.size(); i++) {
+                vz.start();
+            }
+            System.out.println("He vendido "+total+" Zapatillas");
+            System.out.println("Ahora me quedan "+(cantidad-total));
+        } else {
+            System.out.println("No tienes tantas zapatillas");
+        }
+    }
+
+    public static class VenderZapatillas extends Thread {
+
+        private int vender;
+
+        public VenderZapatillas(int vender){
+            this.vender = vender;
+        }
+        public void run(){
+            for (int i = vender; i >=0; i--) {
+                System.out.println("Vendido");
+            }
         }
     }
 }
