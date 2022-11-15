@@ -7,9 +7,9 @@ public class Padre extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 4; i++) {
-            System.out.println("Agregaste 1 zapatilla");
+            System.out.println("Vendiste "+ (i+1) +" zapatilla");
             try {
-                Thread.sleep(200);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -39,7 +39,7 @@ public class Padre extends Thread {
         hijoH.start();
         padreH.start();
         try {
-            hijoH.join();
+            padreH.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

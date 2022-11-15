@@ -9,13 +9,14 @@ public class Hijo extends Thread {
     @Override
     public void run() {
         ArrayList<Zapatilla> zapatillas = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 4; i++) {
             Zapatilla zapatilla9 = new Zapatilla("nike");
             Zapatilla zapatilla10 = new Zapatilla("puma");
             zapatillas.add(zapatilla9);
             System.out.println(zapatilla9.marca);
             zapatillas.add(zapatilla10);
             System.out.println(zapatilla10.marca);
+            System.out.println("Compraste "+(i+2)+" zapatillas");
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
