@@ -15,8 +15,11 @@ public class Cliente2 {
                 BufferedReader in = new BufferedReader(new InputStreamReader(cliente.getInputStream()));
 
                 out.println("hola papi");
+                out.println("que mirás bobo");
+                out.println("anda palla bobo");
 
                 System.out.println(in.readLine());
+
                 out.close();
                 in.close();
                 cliente.close();

@@ -17,8 +17,13 @@ public class Hilo extends Thread {
             PrintWriter out = new PrintWriter(cliente.getOutputStream(),true);
             BufferedReader in = new BufferedReader(new InputStreamReader(cliente.getInputStream()));
             String inputLine = in.readLine();
+            String inputLine2 = in.readLine();
+            String inputLine3 = in.readLine();
 
             System.out.println("recibido: "+ inputLine);
+            System.out.println(inputLine2);
+            System.out.println(inputLine3);
+
 
             out.println("Nos ha llegado el mensaje");
 
