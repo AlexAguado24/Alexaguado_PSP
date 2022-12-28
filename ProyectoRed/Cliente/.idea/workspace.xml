@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73db8f80-2f25-4f5e-b34d-0e41b8b27f2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Zapatilla.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Servidor/src/Zapatilla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Cliente/out/production/Cliente/Cliente2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Cliente/out/production/Cliente/Cliente2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Cliente/src/Cliente2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Cliente/src/Cliente2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Servidor/out/production/Servidor/Hilo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Servidor/out/production/Servidor/Hilo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Servidor/src/Hilo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Servidor/src/Hilo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Servidor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Servidor/.idea/workspace.xml" afterDir="false" />
@@ -40,7 +34,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Usuario/Desktop/DAM/Segundo_2/Alexaguado_PSP/ProyectoRed/Servidor"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

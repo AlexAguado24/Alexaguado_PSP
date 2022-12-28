@@ -8,9 +8,10 @@ public class Cliente {
             Socket cliente = new Socket("127.0.0.1",6666);
 
             ObjectInputStream inObject = new ObjectInputStream(cliente.getInputStream());
-
-            Zapatilla zapa = (Zapatilla) inObject.readObject();
-            System.out.println(zapa.getMarca());
+            for (int i = 0; i < 7; i++) {
+                Zapatilla zapa = (Zapatilla) inObject.readObject();
+                System.out.println(zapa.getMarca());
+            }
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

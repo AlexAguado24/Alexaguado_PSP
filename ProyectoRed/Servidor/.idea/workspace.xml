@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49301036-f38d-41bb-b399-4eb87b6d834b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Cliente/src/Zapatilla.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Zapatilla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Cliente/out/production/Cliente/Cliente2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Cliente/out/production/Cliente/Cliente2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Cliente/src/Cliente2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Cliente/src/Cliente2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Servidor/out/production/Servidor/Hilo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Servidor/out/production/Servidor/Hilo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Servidor/src/Hilo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ClienteServidor/ProyectoClienteServidor/Servidor/src/Hilo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cliente/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cliente/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/src/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -41,7 +35,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Usuario/Desktop/DAM/Segundo_2/Alexaguado_PSP/ProyectoRed/Servidor"
   }
 }]]></component>
   <component name="RecentsManager">
