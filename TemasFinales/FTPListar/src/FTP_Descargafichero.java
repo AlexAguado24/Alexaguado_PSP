@@ -1,6 +1,8 @@
-
-import java.io.*;
 import org.apache.commons.net.ftp.*;
+
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  *

@@ -1,11 +1,13 @@
-import java.io.*;
-import org.apache.commons.net.ftp.*;
+import org.apache.commons.net.ftp.FTPClient;
+import org.apache.commons.net.ftp.FTPFile;
+
+import java.io.IOException;
 
 /**
  *
  * @author Daniel Marcos Lorrio
  */
-public class FTP_listaarchivos {
+public class FTPListar {
 
     public static void main(String[] args) {
 
