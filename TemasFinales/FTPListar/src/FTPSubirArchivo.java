@@ -1,0 +1,44 @@
+import java.io.*;
+import org.apache.commons.net.ftp.*;
+
+/**
+ *
+ * @author Daniel Marcos Lorrio
+ */
+public class FTP_subirarchivo {
+
+    public static void main(String[] args) {
+
+        FTPClient cliente = new FTPClient(); //cliente
+        String servidor = "localhost"; //servidor
+        String user = "dam2";
+        String pasw = "dam2";
+
+        try {
+            System.out.println("Conectandose a " + servidor);
+            cliente.connect(servidor);
+            boolean login = cliente.login(user, pasw);
+            String direc = "curso";
+
+            if (login) {
+                cliente.changeWorkingDirectory(direc);
+                cliente.setFileType(FTP.BINARY_FILE_TYPE);
+
+                //Stream de entrada con el fichero a subir
+                BufferedInputStream in = new BufferedInputStream(new FileInputStream("C:\\Users\\PROFESOR\\Desktop\\descargar\\mensaje.msg"));
+
+                cliente.storeFile("prueba.msg", in);
+
+                //Stream de entrada con el fichero a subir
+                //in = new BufferedInputStream(new FileInputStream("c:\\petra\\gunto.jpg"));
+                //cliente.storeFile("gunto.jpg", in);
+                in.close(); //cerrar flujo
+                cliente.logout(); //logout del usuario
+                cliente.disconnect(); // desconexion del servidor
+            }
+
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+    }
+}
