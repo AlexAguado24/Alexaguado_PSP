@@ -1,7 +1,5 @@
-import java.util.Base64;
-
 public class Base642 {
-    public static void main(String args[]){
+    /*public static void main(String args[]){
         String entradaOriginal = "Texto";
         String cadenaCodificada = Base642.getEncoder().encodeToString(entradaOriginal.getBytes());
 
@@ -11,5 +9,5 @@ public class Base642 {
         String cadenaDecodificada = new String(bytesDecodificados);
 
         System.out.println("Decodificado: " + cadenaDecodificada);
-    }
+    }*/
 }
