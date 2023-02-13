@@ -1,7 +1,7 @@
+import org.apache.commons.net.ftp.*;
+
 import java.io.IOException;
 import java.net.SocketException;
-
-import org.apache.commons.net.ftp.*;
 
 /*
  https://sites.google.com/site/nikos3194rfcindex/home/old-school/ftp
