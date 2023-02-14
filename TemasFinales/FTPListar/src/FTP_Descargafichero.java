@@ -1,4 +1,4 @@
-import org.apache.commons.net.ftp.*;
+/*import org.apache.commons.net.ftp.*;*/
 
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
@@ -12,7 +12,7 @@ public class FTP_Descargafichero {
 
     public static void main(String[] args) {
 
-        FTPClient cliente = new FTPClient(); //cliente
+        /*FTPClient cliente = new FTPClient(); //cliente
         String servidor = "ftp.rediris.es"; //servidor
         String user = "dam2";
         String pasw = "dam2";
@@ -42,6 +42,6 @@ public class FTP_Descargafichero {
             }
         } catch (IOException ioe) {
             ioe.printStackTrace();
-        }
+        }*/
     }
 }

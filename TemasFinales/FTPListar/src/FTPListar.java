@@ -1,5 +1,5 @@
-import org.apache.commons.net.ftp.FTPClient;
-import org.apache.commons.net.ftp.FTPFile;
+/*import org.apache.commons.net.ftp.FTPClient;
+import org.apache.commons.net.ftp.FTPFile;*/
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import java.io.IOException;
  */
 public class FTPListar {
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
 
         FTPClient cliente = new FTPClient();
         String servFTP = "192.168.35.55";
@@ -54,7 +54,7 @@ public class FTPListar {
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
-    }
+    }*/
 }
 
 

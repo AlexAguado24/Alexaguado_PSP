@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9eca779-e1fc-47ed-b49e-17ba0a8e87cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemasFinales/AndroidPSP/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemasFinales/AndroidPSP/app/src/main/java/com/example/trabajopsp/SecondActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemasFinales/AndroidPSP/app/src/main/java/com/example/trabajopsp/model/GenerarContrasenia.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemasFinales/AndroidPSP/app/src/main/res/drawable/fondo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemasFinales/AndroidPSP/app/src/main/res/layout/activity_second.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TemasFinales/FTPListar/src/Ejemplo10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemasFinales/FTPListar/out/production/FTPListar/FTPListar.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TemasFinales/FTPListar/out/production/FTPListar/FTPListar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemasFinales/FTPListar/out/production/FTPListar/FTP_Descargafichero.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TemasFinales/FTPListar/out/production/FTPListar/FTP_Descargafichero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemasFinales/FTPListar/out/production/FTPListar/FTP_subirarchivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TemasFinales/FTPListar/out/production/FTPListar/FTP_subirarchivo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemasFinales/FTPListar/src/FTPListar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TemasFinales/FTPListar/src/FTPListar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemasFinales/FTPListar/src/FTP_Descargafichero.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TemasFinales/FTPListar/src/FTP_Descargafichero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemasFinales/FTPListar/src/FTP_subirarchivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TemasFinales/FTPListar/src/FTP_subirarchivo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +39,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario DAM2/Desktop/DAM2/Alexaguado_PSP/ProyectoPSP&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Usuario/Desktop/DAM/Segundo_2/Alexaguado_PSP/ProyectoRed/Servidor"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="ConnectionPOST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConnectionPOST" />

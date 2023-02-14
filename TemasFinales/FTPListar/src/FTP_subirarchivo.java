@@ -1,5 +1,5 @@
-import org.apache.commons.net.ftp.FTP;
-import org.apache.commons.net.ftp.FTPClient;
+/*import org.apache.commons.net.ftp.FTP;
+import org.apache.commons.net.ftp.FTPClient;*/
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -13,7 +13,7 @@ public class FTP_subirarchivo {
 
     public static void main(String[] args) {
 
-        FTPClient cliente = new FTPClient(); //cliente
+       /* FTPClient cliente = new FTPClient(); //cliente
         String servidor = "localhost"; //servidor
         String user = "dam2";
         String pasw = "dam2";
@@ -43,6 +43,6 @@ public class FTP_subirarchivo {
 
         } catch (IOException ioe) {
             ioe.printStackTrace();
-        }
+        }*/
     }
 }
