@@ -39,7 +39,7 @@ class GenerarContrasenia {
         }
     }
 
-    fun cargar(): Usuario? {
+    /*fun cargar(): Usuario? {
         //var text=""    var persona:Usuario?=null
         try {
             //ruta en el movil
@@ -94,5 +94,5 @@ class GenerarContrasenia {
         } else {
             Toast.makeText(this,"Usuarios NO BORRADOS", Toast.LENGTH_SHORT).show()
         }
-    }
+    }*/
 }
