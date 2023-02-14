@@ -16,9 +16,7 @@ public class Firma{
             dataOS.writeObject(resumen);// se escribe el resumen
             dataOS.close();
             fileout.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (NoSuchAlgorithmException e) {
+        } catch (IOException | NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
     }
