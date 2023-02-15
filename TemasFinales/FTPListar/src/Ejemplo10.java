@@ -1,4 +1,9 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.security.Key;
+import java.security.NoSuchAlgorithmException;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
@@ -38,17 +43,22 @@ public class Ejemplo10 {
             c.init(Cipher.ENCRYPT_MODE, clave);
 
             //CIFRAMOS TEXTO
-            byte textoPlano[] = "MarcosASloquito".getBytes();
+            byte textoPlano[] = "adios".getBytes();
             byte textoCifrado[] = c.doFinal(textoPlano);
             System.out.println("Encriptado: "+ new String(textoCifrado));
+            clave = kg.generateKey();
+
+            ObjectOutputStream out = new ObjectOutputStream(
+                    new FileOutputStream("Clave.secreta"));
+            out.writeObject(clave);
+            out.close();
 
             //DESCIFRAMOS TEXTO
-            c.init(Cipher.DECRYPT_MODE, clave);
+            /*c.init(Cipher.DECRYPT_MODE, clave);
             byte desencriptado[] = c.doFinal(textoCifrado);
-            System.out.println("Desencriptado: "+ new String(desencriptado));
+            System.out.println("Desencriptado: "+ new String(desencriptado));*/
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }
