@@ -5,13 +5,13 @@ import java.io.*;
 import java.lang.reflect.Array;
 import java.util.Scanner;
 
-public class CifradoAES {
+public class PruebasLogin {
     public static void main(String[] args) {
         File claves = new File("C:\\Users\\Usuario\\Desktop\\claves\\claves.txt");
         Scanner sc = new Scanner(System.in);
         System.out.println("Escribe nombre");
         String nombre = sc.next();
-        CifradoAES main = new CifradoAES();
+        PruebasLogin main = new PruebasLogin();
 
         main.escribirClave(nombre,claves);
         String lectura = main.leerFichero(claves);
@@ -20,12 +20,15 @@ public class CifradoAES {
 
         String[] nombreClave =  lectura.split(",");
         String clave = nombreClave[1];
+
         main.comprobarClave(clave);
+
+
     }
     public void comprobarClave(String claveComprobar){
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         System.out.println("Escribe claveNueva");
-        String claveNueva = sc.next();
+        String claveNueva = sc.next();*/
         try {
             KeyGenerator kg = KeyGenerator.getInstance("AES");
             kg.init (128);
@@ -35,13 +38,14 @@ public class CifradoAES {
             c.init(Cipher.ENCRYPT_MODE, clave);
 
             //CIFRAMOS TEXTO
-            byte textoPlano[] = claveNueva.getBytes();
+            byte textoPlano[] = "adios".getBytes();
             byte textoCifrado[] = c.doFinal(textoPlano);
+
 
             System.out.println(claveComprobar+"antes");
             System.out.println(new String(textoCifrado)+"antes");
 
-            if (textoCifrado.toString().equals(claveComprobar)) {
+            if (new String(textoCifrado).equals(claveComprobar)) {
                 System.out.println("Las claves son iguales");
             } else {
                 System.out.println(claveComprobar+"despues");
@@ -67,8 +71,8 @@ public class CifradoAES {
             byte textoPlano[] = "adios".getBytes();
             byte textoCifrado[] = c.doFinal(textoPlano);
             System.out.println("Encriptado: "+ new String(textoCifrado));
-            printWriter = new PrintWriter(new FileWriter(file));
-            printWriter.println(nombre+","+new String(textoCifrado));
+            /*printWriter = new PrintWriter(new FileWriter(file));
+            printWriter.println(nombre+","+new String(textoCifrado2));*/
 
             //DESCIFRAMOS TEXTO
             /*c.init(Cipher.DECRYPT_MODE, clave);

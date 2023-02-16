@@ -6,10 +6,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.trabajopsp.databinding.ActivityMainBinding
 import com.example.trabajopsp.model.Usuario
-import java.io.FileNotFoundException
-import java.io.FileOutputStream
-import java.io.IOException
-import java.io.ObjectOutputStream
+import java.io.*
 import java.security.NoSuchAlgorithmException
 import javax.crypto.Cipher
 import javax.crypto.KeyGenerator
@@ -68,7 +65,16 @@ class MainActivity : AppCompatActivity() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
-
     }
+    //Esto es para LEER lo que hay dentro del fichero    - NO LO PONGO PORQUE NO SE ESCRIBIRLO
+    //la carpeta y el directorio lo creamos a mano
+    // la carpeta raw no se puede cambiar porque es el requisito para el openRawResources
+    /*val text: String;
+    val filename = "ficheros"
+    val inputStream = resources.openRawResource( resources.getIdentifier(filename,"raw", packageName))
+    var inputStreamReader: InputStreamReader = InputStreamReader(inputStream)
+    var bufferedReader: BufferedReader = BufferedReader(inputStreamReader)
+    text =  bufferedReader.readLine().toString()
+    println(text)*/
 }
 
