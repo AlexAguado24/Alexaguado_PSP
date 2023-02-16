@@ -1,4 +1,4 @@
-import org.apache.commons.net.ftp.*;
+/*import org.apache.commons.net.ftp.*;*/
 
 import java.io.IOException;
 import java.net.SocketException;
@@ -17,7 +17,7 @@ import java.net.SocketException;
 public class FTP {
     public static void main(String[] args) throws SocketException, IOException {
 
-        FTPClient cliente = new FTPClient();
+        /*FTPClient cliente = new FTPClient();
         String servFTP = "ftp.rediris.es"; // servidor FTP
         System.out.println("Nos conectamos a: " + servFTP);
         cliente.connect(servFTP);
@@ -37,7 +37,7 @@ public class FTP {
         }
         // desconexi�n del servidor FTP
         cliente.disconnect();
-        System.out.println("Conexi�n finalizada.");
+        System.out.println("Conexi�n finalizada.");*/
     }
 
 }// ..
