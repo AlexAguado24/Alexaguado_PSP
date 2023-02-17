@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class CifradoAES {
     public static void main(String[] args) {
-        File claves = new File("C:\\Users\\Usuario\\Desktop\\claves\\claves.txt");
+        File claves = new File("C:\\Users\\Usuario DAM2\\Desktop\\claves\\claves.txt");
         Scanner sc = new Scanner(System.in);
         System.out.println("Escribe nombre");
         String nombre = sc.next();
@@ -37,9 +37,11 @@ public class CifradoAES {
             //CIFRAMOS TEXTO
             byte textoPlano[] = claveNueva.getBytes();
             byte textoCifrado[] = c.doFinal(textoPlano);
+            byte textoPlano2[] = "jessica".getBytes();
+            byte textoCifrado2[] = c.doFinal(textoPlano2);
 
-            System.out.println(claveComprobar+"antes");
-            System.out.println(new String(textoCifrado)+"antes");
+            System.out.println("Cifrado 1"+new String(textoCifrado)+"antes");
+            System.out.println("Cifrado 2"+new String(textoCifrado2)+"antes");
 
             if (textoCifrado.toString().equals(claveComprobar)) {
                 System.out.println("Las claves son iguales");
@@ -64,7 +66,7 @@ public class CifradoAES {
             c.init(Cipher.ENCRYPT_MODE, clave);
 
             //CIFRAMOS TEXTO
-            byte textoPlano[] = "adios".getBytes();
+            byte textoPlano[] = "jessica".getBytes();
             byte textoCifrado[] = c.doFinal(textoPlano);
             System.out.println("Encriptado: "+ new String(textoCifrado));
             printWriter = new PrintWriter(new FileWriter(file));
