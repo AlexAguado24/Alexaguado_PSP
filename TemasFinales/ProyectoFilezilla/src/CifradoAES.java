@@ -37,7 +37,7 @@ public class CifradoAES {
             //CIFRAMOS TEXTO
             byte textoPlano[] = claveNueva.getBytes();
             byte textoCifrado[] = c.doFinal(textoPlano);
-            byte textoPlano2[] = "jessica".getBytes();
+            byte textoPlano2[] = "andrea".getBytes();
             byte textoCifrado2[] = c.doFinal(textoPlano2);
 
             System.out.println("Cifrado 1"+new String(textoCifrado)+"antes");
@@ -66,7 +66,7 @@ public class CifradoAES {
             c.init(Cipher.ENCRYPT_MODE, clave);
 
             //CIFRAMOS TEXTO
-            byte textoPlano[] = "jessica".getBytes();
+            byte textoPlano[] = "andrea".getBytes();
             byte textoCifrado[] = c.doFinal(textoPlano);
             System.out.println("Encriptado: "+ new String(textoCifrado));
             printWriter = new PrintWriter(new FileWriter(file));
