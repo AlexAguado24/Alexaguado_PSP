@@ -7,47 +7,45 @@ import java.util.Scanner;
 
 public class CifradoAES {
     public static void main(String[] args) {
-        File claves = new File("C:\\Users\\Usuario DAM2\\Desktop\\claves\\claves.txt");
+        File claves = new File("C:\\Users\\Usuario\\Desktop\\claves\\claves.txt");
         Scanner sc = new Scanner(System.in);
         System.out.println("Escribe nombre");
         String nombre = sc.next();
+        System.out.println("Escribe clave a encriptar");
+        String claveEncriptar = sc.next();
         CifradoAES main = new CifradoAES();
 
-        main.escribirClave(nombre,claves);
+
+        SecretKey clave =  main.escribirClave(nombre,claveEncriptar,claves);
         String lectura = main.leerFichero(claves);
 
         //System.out.println(lectura);
 
         String[] nombreClave =  lectura.split(",");
-        String clave = nombreClave[1];
-        main.comprobarClave(clave);
+        String claveEscrita = nombreClave[1];
+        main.comprobarClave(claveEscrita,clave);
     }
-    public void comprobarClave(String claveComprobar){
+    public void comprobarClave(String claveComprobar, SecretKey clave){
         Scanner sc = new Scanner(System.in);
         System.out.println("Escribe claveNueva");
         String claveNueva = sc.next();
         try {
-            KeyGenerator kg = KeyGenerator.getInstance("AES");
-            kg.init (128);
-            SecretKey clave = kg.generateKey();
 
             Cipher c = Cipher.getInstance("AES/ECB/PKCS5Padding");
             c.init(Cipher.ENCRYPT_MODE, clave);
 
             //CIFRAMOS TEXTO
-            byte textoPlano[] = claveNueva.getBytes();
+            byte textoPlano[] = claveComprobar.getBytes();
             byte textoCifrado[] = c.doFinal(textoPlano);
-            byte textoPlano2[] = "andrea".getBytes();
-            byte textoCifrado2[] = c.doFinal(textoPlano2);
+            //CIFRAMOS TEXTO
+            c.init(Cipher.DECRYPT_MODE, clave);
+            byte desencriptado[] = c.doFinal(textoCifrado);
+            System.out.println("Desencriptado: "+ new String(desencriptado));
 
-            System.out.println("Cifrado 1"+new String(textoCifrado)+"antes");
-            System.out.println("Cifrado 2"+new String(textoCifrado2)+"antes");
-
-            if (textoCifrado.toString().equals(claveComprobar)) {
+            if (new String(desencriptado).equals(claveNueva)) {
                 System.out.println("Las claves son iguales");
             } else {
                 System.out.println(claveComprobar+"despues");
-                System.out.println(new String(textoCifrado)+"despues");
                 System.out.println("Claves diferentes joder");
             }
         } catch (Exception e) {
@@ -55,27 +53,29 @@ public class CifradoAES {
         }
 
     }
-    public void escribirClave(String nombre,File file){
+    public SecretKey escribirClave(String nombre,String claveEncriptar,File file){
         PrintWriter printWriter = null;
+        SecretKey clave = null;
         try {
             KeyGenerator kg = KeyGenerator.getInstance("AES");
             kg.init (128);
-            SecretKey clave = kg.generateKey();
+            clave = kg.generateKey();
 
             Cipher c = Cipher.getInstance("AES/ECB/PKCS5Padding");
             c.init(Cipher.ENCRYPT_MODE, clave);
 
             //CIFRAMOS TEXTO
-            byte textoPlano[] = "andrea".getBytes();
+            byte textoPlano[] = claveEncriptar.getBytes();
             byte textoCifrado[] = c.doFinal(textoPlano);
             System.out.println("Encriptado: "+ new String(textoCifrado));
             printWriter = new PrintWriter(new FileWriter(file));
             printWriter.println(nombre+","+new String(textoCifrado));
 
             //DESCIFRAMOS TEXTO
-            /*c.init(Cipher.DECRYPT_MODE, clave);
+            c.init(Cipher.DECRYPT_MODE, clave);
             byte desencriptado[] = c.doFinal(textoCifrado);
-            System.out.println("Desencriptado: "+ new String(desencriptado));*/
+            System.out.println("Desencriptado: "+ new String(desencriptado));
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -83,6 +83,7 @@ public class CifradoAES {
                 printWriter.close();
             }
         }
+        return clave;
     }
 
     public String leerFichero(File file){
