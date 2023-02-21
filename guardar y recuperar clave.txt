@@ -1,0 +1,28 @@
+-----------------
+https://www.jesusninoc.com/02/05/almacenar-la-clave-secreta-generada-con-el-algoritmo-aes-en-un-fichero-en-java/
+-----------------
+
+ KeyGenerator kg = KeyGenerator.getInstance("AES");
+ kg.init(128);
+ 
+        //genera clave secreta
+ SecretKey clave = kg.generateKey();
+ 
+ ObjectOutputStream out = new ObjectOutputStream(
+        new FileOutputStream("Clave.secreta"));
+ out.writeObject(clave);
+ 
+ -----------------
+ https://github.com/jesusninoc/ClasesPSP/blob/master/2023-02-20.md#utilizar-la-clave-secreta-almacenada-en-un-fichero-para-cifrar-un-documento-pdf-de-nombre-ficheropdf
+ -----------------
+ //RECUPERAMOS CLAVE SECRETA DEL FICHERO
+            ObjectInputStream oin = new ObjectInputStream(
+                     new FileInputStream("Clave.secreta"));
+            Key clavesecreta = (Key) oin.readObject();
+            oin.close();      
+            
+            
+            
+-------------------------
+https://www.jesusninoc.com/02/05/cifrar-y-descifrar-con-aes-desde-java-con-clave-anadida/
+-------------------------------
