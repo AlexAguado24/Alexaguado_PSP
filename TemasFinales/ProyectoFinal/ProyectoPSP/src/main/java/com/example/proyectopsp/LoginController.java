@@ -24,7 +24,7 @@ public class LoginController  implements Initializable {
     private TextField texto_nombre;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        
+
     }
 
 
