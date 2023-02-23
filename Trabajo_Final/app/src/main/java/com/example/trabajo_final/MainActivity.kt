@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     private fun acciones() {
 
         binding.btnIniciar.setOnClickListener{
-            var hilo = ClienteSSL("Proce 1")
+            var hilo = Cliente2()
             hilo.start()
             guardar(binding.root)
             irLoguin(binding.root)
