@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49301036-f38d-41bb-b399-4eb87b6d834b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../TemasFinales/ProyectoFilezilla/src/ExampleRSA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../TemasFinales/ProyectoFilezilla/src/NuevoAES.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TemasFinales/ProyectoFilezilla/out/production/ProyectoFilezilla/CifradoAES.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../TemasFinales/ProyectoFilezilla/out/production/ProyectoFilezilla/CifradoAES.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TemasFinales/ProyectoFilezilla/out/production/ProyectoFilezilla/interfaz/login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TemasFinales/ProyectoFilezilla/src/CifradoAES.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TemasFinales/ProyectoFilezilla/src/CifradoAES.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TemasFinales/ProyectoFilezilla/src/interfaz/login.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TemasFinales/ProyectoFilezilla/src/interfaz/login.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ficheroZapas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/src/Cliente2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/src/ficheroZapas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cliente/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cliente/out/production/Cliente/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/out/production/Cliente/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cliente/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Usuario DAM2/Desktop/DAM2/Alexaguado_PSP/ProyectoRed/Servidor"
+    "last_opened_file_path": "C:/Users/Usuario DAM2/Desktop/DAM2/Alexaguado_PSP/TemasFinales/ProyectoFinal"
   }
 }]]></component>
   <component name="RecentsManager">
