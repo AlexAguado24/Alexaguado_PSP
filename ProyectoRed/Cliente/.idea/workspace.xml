@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73db8f80-2f25-4f5e-b34d-0e41b8b27f2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ficheroZapas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ficheroZapas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cliente/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cliente/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Servidor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Servidor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UltimoTrabajo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UltimoTrabajo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UltimoTrabajo/app/src/main/res/layout/activity_principal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UltimoTrabajo/app/src/main/res/layout/activity_principal.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +38,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Usuario DAM2/Desktop/DAM2/Alexaguado_PSP/ProyectoRed/Cliente"
+    "last_opened_file_path": "C:/Users/Usuario/Desktop/DAM/Segundo_2/Alexaguado_PSP/ProyectoRed/Cliente"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
