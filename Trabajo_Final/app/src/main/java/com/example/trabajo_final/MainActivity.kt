@@ -114,26 +114,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*         Treaté de meterlo en un fichero interno pero no lo podia escribir,esto lo que hace es ponerlo en un fichero interno, el editor
         var text="HOLA"
         val filename = "informacion"
