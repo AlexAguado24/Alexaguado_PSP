@@ -107,14 +107,12 @@ public class Main {
                 lecturaFichero = br.readLine();
                 String[] usuDos = lecturaFichero.split(" ");
 
-
-                //TODO FALTA AGREGAR EL [
                 for (Usuario usuarioDeFichero : usuariosRecuperados) {
                     if (usuDos[0].equals(usuarioDeFichero.getNombre())) {
-                        System.out.println(usuDos[0] + " son iguales " + usuarioDeFichero.getNombre());
-                        System.out.println("USUARIO LOGUEADO");
+                        System.out.println(usuDos[0] + " coincide con " + usuarioDeFichero.getNombre());
+                        System.out.println("Loguin");
                     } else {
-                        System.out.println("no son iguales");
+                        System.out.println("No coincide");
                     }
                 }
             }
