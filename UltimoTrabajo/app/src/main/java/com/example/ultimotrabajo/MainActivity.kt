@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Complete los campos para su registro", Toast.LENGTH_SHORT).show()
         } else {
             arrPersonaRec.forEach {
-                if (it.nombre == binding.editUsuario.text.toString() && it.contrasenia == binding.editContrasenia.text.toString()) {
+                if (it.nombre == binding.editUsuario.text.toString()){
                     //cuando encuentra el usuario en la base de datos arranca la nueva pantalla
                     val intent= Intent(this, MainActivity::class.java)
                     startActivity(intent)

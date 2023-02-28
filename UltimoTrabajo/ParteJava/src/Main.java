@@ -17,7 +17,7 @@ public class Main {
         BufferedWriter bwr;
         File ficheroBBDD = new File("src/ficheroBaseDatos.txt");
         PrintWriter printWriter = null;
-        //ArrayList<String> usuariosCreados = new ArrayList<>();
+        ArrayList<String> usuariosCreados = new ArrayList<>();
         ArrayList<Usuario> usuariosRecuperados = new ArrayList<>();
         Usuario usuarioRecuperado = null;
         Usuario usuario = null;
@@ -37,7 +37,7 @@ public class Main {
                 String lectura = null;
                 br = new BufferedReader(new FileReader(ficheroBBDD));
                 while ((lectura = br.readLine()) != null) {
-                    String[] separoNomyCont = lectura.split(",");
+                    String[] separoNomyCont = lectura.split(" ");
                     if (separoNomyCont.length != 2) {
                         int conteo = 3;
                         String nombre = null;
@@ -86,24 +86,24 @@ public class Main {
                 fw = new FileWriter(ficheroBBDD.getAbsoluteFile(), true);
                 bwr = new BufferedWriter(fw);
                 lecturaFichero = br.readLine();
-                String[] nombreYApellido = lecturaFichero.split(",");
+                String[] nombreYApellido = lecturaFichero.split(" ");
 
                 printWriter = new PrintWriter(ficheroBBDD);
-                //String usuarioCompleto = nombreYApellido[0] + "," + nombreYApellido[1];
+                String usuarioCompleto = nombreYApellido[0] + " " + nombreYApellido[1];
                 //Escribo el usuario
-                /*for (int i = 0; i < 1; i++) {
+                for (int i = 0; i < 1; i++) {
                     usuariosCreados.add(usuarioCompleto);
-                }*/
+                }
 
-                //fw.write(String.valueOf(usuariosCreados));
+                fw.write(String.valueOf(usuariosCreados));
                 cliente.close();
                 fw.close();
 
-                // System.out.println("Entra "+ usuario.getNombre());
+                
 
-//######################################                       FIN  ESCRITURA DE FICHERO           ###################################################
+            //FIN  ESCRITURA DE FICHERO
             }
-            System.out.println("#############################################    VIENDO SI EXISTE EL USUARIO  ######################################");
+            System.out.println("VIENDO SI EXISTE EL USUARIO");
             System.out.println("1 y 0 termina la busqueda de usuario");
             while (!lecturaFichero.equals(1 + cero)) {
                 Socket cliente = server.accept();
