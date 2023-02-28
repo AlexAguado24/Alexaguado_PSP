@@ -94,12 +94,9 @@ public class Main {
                 for (int i = 0; i < 1; i++) {
                     usuariosCreados.add(usuarioCompleto);
                 }
-
                 fw.write(String.valueOf(usuariosCreados));
                 cliente.close();
                 fw.close();
-
-                
 
             //FIN  ESCRITURA DE FICHERO
             }

@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         } else if (binding.editUsuario.text.toString() == "1" && binding.editContrasenia.text?.toString() == "0") {
             //Termina de comparar
             binding.textoRegistro.setText("USUARIO LOGUEADO")
-            binding.botonAceptar.setText("Log")
+            binding.botonAceptar.setText("Loguear")
             regUsu()
         } else if (binding.editUsuario.text.toString() == "" && binding.editContrasenia.text.toString() == "") {
             Toast.makeText(this, "Complete los campos para su registro", Toast.LENGTH_SHORT).show()
