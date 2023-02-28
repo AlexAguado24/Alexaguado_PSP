@@ -17,7 +17,7 @@ public class Main {
         BufferedWriter bwr;
         File ficheroBBDD = new File("src/ficheroBaseDatos.txt");
         PrintWriter printWriter = null;
-        ArrayList<String> usuariosCreados = new ArrayList<>();
+        //ArrayList<String> usuariosCreados = new ArrayList<>();
         ArrayList<Usuario> usuariosRecuperados = new ArrayList<>();
         Usuario usuarioRecuperado = null;
         Usuario usuario = null;
@@ -89,13 +89,13 @@ public class Main {
                 String[] nombreYApellido = lecturaFichero.split(",");
 
                 printWriter = new PrintWriter(ficheroBBDD);
-                String usuarioCompleto = nombreYApellido[0] + "," + nombreYApellido[1];
+                //String usuarioCompleto = nombreYApellido[0] + "," + nombreYApellido[1];
                 //Escribo el usuario
-                for (int i = 0; i < 1; i++) {
+                /*for (int i = 0; i < 1; i++) {
                     usuariosCreados.add(usuarioCompleto);
-                }
+                }*/
 
-                fw.write(String.valueOf(usuariosCreados));
+                //fw.write(String.valueOf(usuariosCreados));
                 cliente.close();
                 fw.close();
 
