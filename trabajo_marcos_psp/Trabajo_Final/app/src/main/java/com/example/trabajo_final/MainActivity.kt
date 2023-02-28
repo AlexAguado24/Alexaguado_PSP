@@ -51,7 +51,7 @@ lateinit var bf:BufferedReader;
 
 
                     //println("serch")
-                    client = Socket("192.168.137.1", 1234)
+                    client = Socket("192.168.68.107", 1234)
                     out = PrintWriter(client.getOutputStream(), true)
                     br = BufferedOutputStream(client.getOutputStream())
                     Log.v("manda","${persona.nombre}")

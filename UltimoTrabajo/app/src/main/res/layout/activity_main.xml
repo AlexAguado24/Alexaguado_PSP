@@ -11,6 +11,7 @@
     android:gravity="center">
 
     <TextView
+        android:id="@+id/texto_registro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Pantalla de registro"
@@ -66,7 +67,7 @@
         android:id="@+id/boton_aceptar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Entrar"
+        android:text="Registrar"
         android:backgroundTint="@android:color/holo_green_light"
         />
 

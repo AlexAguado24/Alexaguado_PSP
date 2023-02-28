@@ -1,4 +1,4 @@
-package com.example.trabajofinalpsp
+package com.example.ultimotrabajo
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

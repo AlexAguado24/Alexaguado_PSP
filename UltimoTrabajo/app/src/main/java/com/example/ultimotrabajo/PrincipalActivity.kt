@@ -1,9 +1,10 @@
-package com.example.trabajofinalpsp
+package com.example.ultimotrabajo
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.trabajofinalpsp.databinding.ActivityPrincipalBinding
+import com.example.ultimotrabajo.databinding.ActivityPrincipalBinding
+
 
 class PrincipalActivity : AppCompatActivity() {
 

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.trabajofinalpsp'
+    namespace 'com.example.ultimotrabajo'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.trabajofinalpsp"
+        applicationId "com.example.ultimotrabajo"
         minSdk 24
         targetSdk 33
         versionCode 1
