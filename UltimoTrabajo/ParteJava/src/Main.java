@@ -97,11 +97,9 @@ public class Main {
                 fw.write(String.valueOf(usuariosCreados));
                 cliente.close();
                 fw.close();
-
-            //FIN  ESCRITURA DE FICHERO
             }
-            System.out.println("VIENDO SI EXISTE EL USUARIO");
-            System.out.println("1 y 0 termina la busqueda de usuario");
+            System.out.println("Buscando el usuario");
+            System.out.println("Ingresa 1 y 0 para terminar la busqueda");
             while (!lecturaFichero.equals(1 + cero)) {
                 Socket cliente = server.accept();
                 br = new BufferedReader(new InputStreamReader(cliente.getInputStream()));
