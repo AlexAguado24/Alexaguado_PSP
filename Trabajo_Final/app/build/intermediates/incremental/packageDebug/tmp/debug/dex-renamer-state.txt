@@ -1,0 +1,13 @@
+#Tue Feb 21 21:56:34 CET 2023
+path.3=6/classes.dex
+path.2=4/classes.dex
+path.1=0/classes.dex
+path.0=classes.dex
+base.3=D\:\\Repo_GitHubPro_2do_Anio\\PSP\\Segundo Trimestre\\Trabajo_Final\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.2=D\:\\Repo_GitHubPro_2do_Anio\\PSP\\Segundo Trimestre\\Trabajo_Final\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.1=D\:\\Repo_GitHubPro_2do_Anio\\PSP\\Segundo Trimestre\\Trabajo_Final\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=D\:\\Repo_GitHubPro_2do_Anio\\PSP\\Segundo Trimestre\\Trabajo_Final\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
