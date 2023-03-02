@@ -15,7 +15,7 @@ public class Main {
         String lecturaFichero = "";
         FileWriter fw;
         BufferedWriter bwr;
-        File ficheroBBDD = new File("src/ficheroBaseDatos.txt");
+        File ficheroBBDD = new File("C:\\Users\\Usuario DAM2\\Desktop\\DAM2\\Alexaguado_PSP\\UltimoTrabajo\\ParteJava\\src\\ficheroBaseDatos.txt");
         PrintWriter printWriter = null;
         ArrayList<String> usuariosCreados = new ArrayList<>();
         ArrayList<Usuario> usuariosRecuperados = new ArrayList<>();
@@ -31,8 +31,8 @@ public class Main {
             BufferedWriter bw = new BufferedWriter(new FileWriter(ficheroBBDD));
             bw.write("");
             bw.close();
-            String cero = " 31BCA02094EB78126A517B206A88C73CFA9EC6F704C7030D18212CACE820F025F00BF0EA68DBF3F3A5436CA63B53BF7BF80AD8D5DE7D8359D0B7FED9DBC3AB99";
-            while (!lecturaFichero.equals(0 + cero)) {
+            String nueve = " 0DC526D8C4FA04084F4B2A6433F4CD14664B93DF9FB8A9E00B77BA890B83704D24944C93CAA692B51085BB476F81852C27E793600F137AE3929018CD4C8F1A45";
+            while (!lecturaFichero.equals('x' + nueve)) {
                 //leyendo fichero
                 String lectura = null;
                 br = new BufferedReader(new FileReader(ficheroBBDD));
@@ -99,8 +99,8 @@ public class Main {
                 fw.close();
             }
             System.out.println("Buscando el usuario");
-            System.out.println("Ingresa 1 y 0 para terminar la busqueda");
-            while (!lecturaFichero.equals(1 + cero)) {
+            System.out.println("Ingresa x y 9 para terminar la busqueda");
+            while (!lecturaFichero.equals(1 + nueve)) {
                 Socket cliente = server.accept();
                 br = new BufferedReader(new InputStreamReader(cliente.getInputStream()));
                 fw = new FileWriter(ficheroBBDD.getAbsoluteFile(), true);
@@ -110,7 +110,7 @@ public class Main {
                 for (Usuario usuarioDeFichero : usuariosRecuperados) {
                     if (usuDos[0].equals(usuarioDeFichero.getNombre())) {
                         System.out.println(usuDos[0] + " coincide con " + usuarioDeFichero.getNombre());
-                        System.out.println("Loguin");
+                        System.out.println("Logueando al usuario");
                     } else {
                         System.out.println("No coincide");
                     }

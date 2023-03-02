@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
                 override fun run() {
                     super.run()
-                    client = Socket("192.168.68.107", 1234)
+                    client = Socket("192.168.2.13", 1234)
                     out = PrintWriter(client.getOutputStream(), true)
                     br = BufferedOutputStream(client.getOutputStream())
                     out.write(usuario.nombre + " ")
@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
             arrPersonaRec.forEach {
                 if (it.nombre == binding.editUsuario.text.toString()){
                     //cuando encuentra el usuario en la base de datos arranca la nueva pantalla
-                    val intent= Intent(this, MainActivity::class.java)
+                    val intent= Intent(this, PrincipalActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
