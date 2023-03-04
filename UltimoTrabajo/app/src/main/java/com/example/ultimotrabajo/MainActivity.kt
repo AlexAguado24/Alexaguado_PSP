@@ -70,12 +70,12 @@ class MainActivity : AppCompatActivity() {
             binding.editUsuario.setText("")
             binding.editContrasenia.setText("")
         }
-        if (binding.editUsuario.text.toString() == "0" && binding.editContrasenia.text?.toString() == "0") {
+        if (binding.editUsuario.text.toString() == "x" && binding.editContrasenia.text?.toString() == "9") {
             regUsu()
             //deja de registrar y empieza a comparar
-            binding.textoRegistro.setText("INICIANDO SECION")
+            binding.textoRegistro.setText("INICIANDO SESION")
             binding.botonAceptar.setText("Iniciar")
-        } else if (binding.editUsuario.text.toString() == "1" && binding.editContrasenia.text?.toString() == "0") {
+        } else if (binding.editUsuario.text.toString() == "1" && binding.editContrasenia.text?.toString() == "9") {
             //Termina de comparar
             binding.textoRegistro.setText("USUARIO LOGUEADO")
             binding.botonAceptar.setText("Loguear")

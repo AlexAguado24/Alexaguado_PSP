@@ -16,8 +16,14 @@
         android:text="Buscar"
         android:backgroundTint="@android:color/holo_red_light"
         android:layout_gravity="center"
-
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_conteo"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:gravity="center"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

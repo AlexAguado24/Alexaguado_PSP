@@ -26,7 +26,7 @@ class ZapatillasAdapter(var contexto: Context, var listaZapatillas: ArrayList<Za
 
     fun cambiarLista(listaNueva:ArrayList<Zapatillas>){
         this.listaZapatillas = listaNueva;
-        notifyDataSetChanged();
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder {

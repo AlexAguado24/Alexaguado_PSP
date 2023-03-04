@@ -111,8 +111,6 @@ public class Main {
                     if (usuDos[0].equals(usuarioDeFichero.getNombre())) {
                         System.out.println(usuDos[0] + " coincide con " + usuarioDeFichero.getNombre());
                         System.out.println("Logueando al usuario");
-                    } else {
-                        System.out.println("No coincide");
                     }
                 }
             }
