@@ -15,7 +15,7 @@ public class Main {
         String lecturaFichero = "";
         FileWriter fw;
         BufferedWriter bwr;
-        File ficheroBBDD = new File("C:\\Users\\Usuario DAM2\\Desktop\\DAM2\\Alexaguado_PSP\\UltimoTrabajo\\ParteJava\\src\\ficheroBaseDatos.txt");
+        File ficheroBBDD = new File("C:\\Users\\Usuario\\Desktop\\DAM\\Segundo_2\\Alexaguado_PSP\\UltimoTrabajo\\ParteJava\\src\\ficheroBaseDatos.txt");
         PrintWriter printWriter = null;
         ArrayList<String> usuariosCreados = new ArrayList<>();
         ArrayList<Usuario> usuariosRecuperados = new ArrayList<>();
@@ -26,7 +26,7 @@ public class Main {
             System.out.println(InetAddress.getLocalHost());
             System.out.println("Puerto: " + 1234);
             System.out.println("CREANDO");
-            System.out.println("Ingrese 0 y 0 para dejar de registrar usuarios");
+            System.out.println("Ingrese x y 9 para dejar de registrar usuarios");
             server = new ServerSocket(1234);
             BufferedWriter bw = new BufferedWriter(new FileWriter(ficheroBBDD));
             bw.write("");

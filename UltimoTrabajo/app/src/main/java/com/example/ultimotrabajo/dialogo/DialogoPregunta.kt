@@ -21,6 +21,7 @@ class DialogoPregunta: DialogFragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
+        listener = context as OnMarcaListener;
         vista = LayoutInflater.from(context).inflate(R.layout.dialogo_item,null)
     }
 
