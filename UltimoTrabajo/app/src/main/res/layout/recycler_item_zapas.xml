@@ -13,16 +13,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"/>
 
     <TextView
-        android:id="@+id/nombre_zapas"
+        android:id="@+id/marca_zapas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imagen_zapa"
-        app:layout_constraintTop_toTopOf="@+id/imagen_zapa" />
+        app:layout_constraintTop_toTopOf="@+id/imagen_zapa"/>
 
     <TextView
         android:id="@+id/tipo_zapas"
@@ -30,5 +31,5 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="@+id/imagen_zapa"
-        app:layout_constraintStart_toStartOf="@+id/nombre_zapas" />
+        app:layout_constraintStart_toStartOf="@+id/marca_zapas"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

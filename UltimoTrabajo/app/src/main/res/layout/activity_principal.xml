@@ -10,7 +10,7 @@
     tools:context=".PrincipalActivity">
 
     <Button
-        android:id="@+id/boton_atras"
+        android:id="@+id/boton_buscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buscar"

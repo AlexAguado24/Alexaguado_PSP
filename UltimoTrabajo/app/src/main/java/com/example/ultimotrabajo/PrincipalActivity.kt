@@ -4,13 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ultimotrabajo.databinding.ActivityPrincipalBinding
+import com.example.ultimotrabajo.dialogo.DialogoPregunta
 import com.example.ultimotrabajo.objetos.Zapatillas
 
 
-class PrincipalActivity : AppCompatActivity() {
+class PrincipalActivity : AppCompatActivity(),DialogoPregunta.OnMarcaListener {
 
     private lateinit var binding: ActivityPrincipalBinding
     private lateinit var listaZapas: ArrayList<Zapatillas>
+    private lateinit var marcaZapas: String
+    private lateinit var adapterZapas: ZapatillasAdapter
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,11 +38,19 @@ class PrincipalActivity : AppCompatActivity() {
         listaZapas.add(Zapatillas("Manteca","DC",R.drawable.dc_manteca))
         listaZapas.add(Zapatillas("Red DC","DC",R.drawable.dc_rojas))
         listaZapas.add(Zapatillas("Vandium","DC",R.drawable.dc_vandium))
+        adapterZapas.cambiarLista(adapterZapas.listaZapatillas.filter {
+            it.tipo == marcaZapas
+        } as ArrayList<Zapatillas>)
     }
 
     private fun butonActions() {
-        binding.botonAtras.setOnClickListener{
-
+        binding.botonBuscar.setOnClickListener{
+            DialogoPregunta().show(supportFragmentManager,"")
         }
+    }
+
+    override fun onMarcaSeleccionada(marca: String) {
+        marcaZapas = marca
+
     }
 }
